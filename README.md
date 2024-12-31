@@ -7,7 +7,7 @@
 `docker stop mongodb; docker rm mongodb; docker run --name mongodb -d -p 27017:27017 mongo`
 
 #### run app with
-`./gradlew bootStart`
+`./gradlew bootRun`
 
 #### zkouška přidání hodnocení přes curl
 #### změna hodnocení přes curl (možnost změnit id piva)
