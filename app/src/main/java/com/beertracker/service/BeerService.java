@@ -20,6 +20,7 @@ public class BeerService {
 
     if (beers != null) {
       beerRepository.saveAll(List.of(beers));
+      System.out.println("Loaded beers: " + beerRepository.count());
     }
   }
 
