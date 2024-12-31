@@ -8,20 +8,25 @@
 
 
 #### zkouška přidání hodnocení přes curl
-```curl -X POST http://localhost:8080/beers/4849/ratings \
+#### změna hodnocení přes curl
+```java
+curl -X POST http://localhost:8080/beers/4849/ratings \
 -H "Content-Type: application/json" \
 -d '{
     "stars": 5,
     "description": "v pohodě pívo"
-}'```
+}'
+```
 
 #### změna hodnocení přes curl
-```curl -X PUT http://localhost:8080/beers/ratings/0 \
+```java
+curl -X PUT http://localhost:8080/beers/ratings/0 \
 -H "Content-Type: application/json" \
 -d '{
     "stars": 2,
     "description": "dneska mi nechutnalo (moc sladké)"
-}'```
+}'
+```
 
 #### get všech piv
 `curl -X GET http://localhost:8080/beers`
