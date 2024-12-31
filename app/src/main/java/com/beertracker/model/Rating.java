@@ -9,4 +9,36 @@ public class Rating {
   private String beerId;
   private int stars;
   private String description;
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public String getBeerId() {
+    return beerId;
+  }
+
+  public void setBeerId(String beerId) {
+    this.beerId = beerId;
+  }
+
+  public int getStars() {
+    return stars;
+  }
+
+  public void setStars(int stars) {
+    this.stars = stars;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
 }
