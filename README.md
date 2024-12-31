@@ -8,7 +8,7 @@
 
 
 #### zkouška přidání hodnocení přes curl
-#### změna hodnocení přes curl
+#### změna hodnocení přes curl (možnost změnit id piva)
 ```java
 curl -X POST http://localhost:8080/beers/4849/ratings \
 -H "Content-Type: application/json" \
@@ -18,9 +18,9 @@ curl -X POST http://localhost:8080/beers/4849/ratings \
 }'
 ```
 
-#### změna hodnocení přes curl
+#### změna hodnocení přes curl (potřeba doplnit id hodnocení)
 ```java
-curl -X PUT http://localhost:8080/beers/ratings/0 \
+curl -X PUT http://localhost:8080/beers/ratings/<rating-id> \
 -H "Content-Type: application/json" \
 -d '{
     "stars": 2,
@@ -31,5 +31,5 @@ curl -X PUT http://localhost:8080/beers/ratings/0 \
 #### get všech piv
 `curl -X GET http://localhost:8080/beers`
 
-#### get hodnocení daného piva
+#### get hodnocení daného piva (možnost změnit id piva)
 `curl -X GET http://localhost:8080/beers/4849/ratings`
