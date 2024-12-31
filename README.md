@@ -9,8 +9,7 @@
 #### run app with
 `./gradlew bootRun`
 
-#### zkouška přidání hodnocení přes curl
-#### změna hodnocení přes curl (možnost změnit id piva)
+#### zkouška přidání hodnocení přes curl (možnost změnit id piva)
 ```java
 curl -X POST http://localhost:8080/beers/4849/ratings \
 -H "Content-Type: application/json" \
